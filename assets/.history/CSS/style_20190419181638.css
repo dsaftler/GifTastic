@@ -1,0 +1,9 @@
+body {
+  background-image: "assets/images/ezgif.com-resize.webp"
+}
+.btn {
+  border: 2px solid  red;
+}
+.bntsDiv{
+  border: 8px solid blue;
+}

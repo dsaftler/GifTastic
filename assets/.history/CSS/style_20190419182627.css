@@ -1,0 +1,17 @@
+body {
+  background-image: "assets/images/ezgif.com-resize.webp"
+}
+.btn {
+  border: 2px solid  red;
+}
+.btnsDiv{
+  border: 8px solid blue;
+}
+.getTopic{
+  float: left;
+  border: 3px solid purple;
+}
+
+.showGifs{
+  border: 4px solid green;
+}
