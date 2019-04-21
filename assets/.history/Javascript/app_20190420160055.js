@@ -78,7 +78,6 @@ function showGifs(imgSet, isAdd) {
     for (var i = 0; i < imgSet.length; i++) {
 
         var imgId = 'image_' + [i]
-        
         var newGif = $('<img />', {
             src: imgSet[i].images.fixed_height_still.url,
             "data-still": imgSet[i].images.fixed_height_still.url,
@@ -88,22 +87,38 @@ function showGifs(imgSet, isAdd) {
             id: imgId,
             alt: imgSet[i].title,
             title: "Title: " + imgSet[i].title + "  Rating: " + imgSet[i].rating,
-            class: 'gif txtBtn',                      
+            class: 'gif txtBtn'
         });
+        // .attr('onclick', 'getGif(this.textContent,0);')
+        newGif.attr('onclick', 'changeState(this.id);')
+            //#region   --- infoText
+            //  newGif.attr('onclick', 'changeState();');
+            // //console.log(newGif);
+            //    var infoWidth=imgSet[i].images.fixed_height_still.width + 20;
+            //    var infoText = $('<p class="infoText" width=infoWidth></p>');
+            //    $(".infoText").text("Title: " + imgSet[i].title + '</br>'
+            //     +"Rating: " + imgSet[i].rating + '</br>'
+            //     + "Height:" + imgSet[i].images.fixed_height_still.height + '</br>'
+            //     + "Width:" + imgSet[i].images.fixed_height_still.width+'</br>')
+            // $(".info").text(infoText);
+            // Setting the src attribute of the image to a property pulled off the result item
+            //  console.log(infoText);
+            // !the rating should be UNDER the gif
+            //$(".gif").wrap("<div class='imgContainer' width=imgSet[i].images.fixed_height_still.width+20></div>")
+            //$(".imgContainer").append($(".infoText"))
+            //#endregion
 
-
-
+        // Appending the paragraph and image tag to the animalDiv
+        // $(".showGifs").append($(".imgContainer"));
         $(".showGifs").append(newGif);
         //  $(".showGifs").append(infoText);
     }
-    var newGif = $('<img />', {
-        src: './assets/images/2019_04_20_21_37_15_ezgif.com_gif_maker.webp_339_150_.png',
-        id: "getMore",
-        class: "txtBtn"});
-    newGif.attr('onclick','getGif(myTopic,10);')
-    
-    $(".showGifs").append(newGif);
-
+    // $('.gif').click(changeState());
+    var getMoreBtn = $('<button>Get 10 More ?</button>')
+        .attr("id", "getMore"),
+        .addClass("txtBtn"),
+        .attr('onclick', 'getGif(myTopic,10);')
+    $(".showGifs").append(getMoreBtn);
 };
 
 // var imgTag = document.getElementsByClass("gif");

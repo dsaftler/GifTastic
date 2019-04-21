@@ -90,18 +90,36 @@ function showGifs(imgSet, isAdd) {
             title: "Title: " + imgSet[i].title + "  Rating: " + imgSet[i].rating,
             class: 'gif txtBtn',                      
         });
+        // $(".newGif").wrap("<figure class='fig' width=newGif.width+20></figure>");
+    //   console.log(newGif)
+            // var newGif=$('<figure />',{
+            //     width:newGif.width + 20 ,
+            //     figcaption:newGif.title});
+            //#endregion
+        // $('.gif').click(changeState());
+        var newGif = $('<img />', {
+            src: url("../images/2019_04_20_21_37_15_ezgif.com_gif_maker.webp_339_150_.png"),
+            id: "getMore",
+            class: "txtBtn"
+        });
+        $("newGif").attr('onclick', 'getGif(myTopic,10);')
 
 
+        // var getMoreBtn = $('<div>Get 10 More ?</div>')
+        //     .attr("height", 180)
+        //     .attr("width", 50)
+        //     .attr("id", "getMore")
+        //     .addClass("txtBtn")
+        //     .attr('onclick', 'getGif(myTopic,10);')
 
         $(".showGifs").append(newGif);
         //  $(".showGifs").append(infoText);
     }
     var newGif = $('<img />', {
-        src: './assets/images/2019_04_20_21_37_15_ezgif.com_gif_maker.webp_339_150_.png',
+        src: '../assets/Images/2019_04_20_21_37_15_ezgif.com_gif_maker.webp_339_150_.png',
         id: "getMore",
-        class: "txtBtn"});
-    newGif.attr('onclick','getGif(myTopic,10);')
-    
+        class: "txtBtn"
+    });
     $(".showGifs").append(newGif);
 
 };

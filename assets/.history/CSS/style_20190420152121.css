@@ -1,0 +1,84 @@
+  html {
+    height: 100%;
+  }
+
+  body {
+    border: 5px solid black;
+    height: 100%;
+    padding-top: 75px;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    align-content: center;
+  background-image: url("assets\images\cersei-game-of-thrones-map.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  backrgound-size: cover;
+  background-color: rgb(190, 236, 250);
+  font-family: 'Metamorphous',cursive;
+  font-size: 16px;
+ 
+}
+
+.container{
+   margin: 30px;
+   margin-bottom: 10px;
+   align-content: center;
+   width: 75%;
+   border: 3px solid rgb(2, 65, 94);
+}
+#banner{
+  height: 75px;
+   width: 75%;
+   border: 3px solid rgb(2, 65, 94);
+}
+#giphyBadge{
+  float: right;
+  max-width; 100%;
+  height: 75px;
+}
+
+.btnsDiv{
+  background-color: rgb(190, 236, 250);
+  border: 3px solid rgb(138, 203, 233);
+}
+#newTopic{
+  padding-left: 15px;
+}
+.imgBtn{
+  font-family: "Metamorphous";
+  font-size: 20 px;
+  background-color: rgb(250, 244, 236);
+  color: black;
+
+}
+.getTopic{
+  float: left;
+  border: 3px solid purple;
+}
+.gif{
+  padding: 8px;
+  margin: 8px;
+  border: 8px groove grey;
+  background-color:rgb(250, 244, 236);
+}
+.showGifs{
+  border: 4px solid green;
+}
+.info{
+  font-size: 12px;
+}
+.imgContainer{
+  position: relative;
+}
+.infoText {
+  border: 3px solid red;
+  position: absolute;
+  bottom: 5px;
+  background-color: black;
+  color: white;
+  padding: 4px;
+}
+.favorites{
+  border: 3px solid aquamarine;
+}

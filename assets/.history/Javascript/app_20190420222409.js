@@ -99,9 +99,8 @@ function showGifs(imgSet, isAdd) {
     var newGif = $('<img />', {
         src: './assets/images/2019_04_20_21_37_15_ezgif.com_gif_maker.webp_339_150_.png',
         id: "getMore",
-        class: "txtBtn"});
-    newGif.attr('onclick','getGif(myTopic,10);')
-    
+        class: "txtBtn"
+    });
     $(".showGifs").append(newGif);
 
 };

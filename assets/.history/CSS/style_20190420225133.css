@@ -13,13 +13,23 @@
     align-content: center;
     background: linear-gradient(to bottom right, rgb(190, 236, 250), rgb(0, 8, 12));
     border: 200px, rgb(0, 8, 12,.25);
+  /* background-image: url("assets\images\cersei-game-of-thrones-map.webp"); */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-color: rgb(190, 236, 250); */
+  /* font-family: 'Metamorphous',cursive;
+  font-size: 16px; */
+ 
 }
 
 .container{
   margin: auto;
-  margin-top:60px;
-  align-content: center;
-  width: 80%;
+   margin-top:60px;
+   
+   
+   align-content: center;
+   width: 80%;
    /* border: 3px solid rgb(2, 65, 94); */
 }
 #banner{
@@ -35,7 +45,7 @@
 }
 
 .btnsDiv{
-  background-color: rgb(148, 187, 199);
+  background-color: rgb(190, 236, 250);
   border: 4px groove #8acbe9;
   min-height: 30px;
   margin-bottom: 10px;
